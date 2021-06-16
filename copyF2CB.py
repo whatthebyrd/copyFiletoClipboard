@@ -15,6 +15,6 @@ if os.path.exists(sys.argv[1]):  # Check if path is valid
     file_cont = file.read()  # Place file contents into var
     file.close()  # Close file
     pyperclip.copy(file_cont)
-
+    print("Successfully copied contents of " + str(sys.argv[1]) + ".")
 else:
     print("Path invalid. Exiting.")
